@@ -1,0 +1,34 @@
+
+# Package-specific substitution variables
+package = @PACKAGE_NAME@
+version = @PACKAGE_VERSION@
+tarname = @PACKAGE_TARNAME@
+
+# Prefix-specific substitution variables
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+bindir = @bindir@
+
+# VPATH-specific substitution variables
+srcdir = @srcdir@
+VPATH = @srcdir@
+
+COMPILER = g++
+LDLIBS += -lz -lpng -llifehash
+
+toolname = lifehash
+
+.PHONY: all
+all: $(toolname)
+
+OBJS = \
+   lifehash.o
+
+$(toolname): $(OBJS)
+
+lifehash.o: png-writer.hpp
+
+.PHONY: clean
+clean:
+	rm -f $(toolname) *.o
+	rm -rf *.dSYM

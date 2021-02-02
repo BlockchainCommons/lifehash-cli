@@ -1,0 +1,11 @@
+[submodule "bc-lifehash"]
+	path = deps/bc-lifehash
+	url = https://github.com/BlockchainCommons/bc-lifehash.git
+[submodule "zlib"]
+	path = deps/zlib
+	url = https://github.com/madler/zlib.git
+    ignore = dirty
+[submodule "libpng"]
+	path = deps/libpng
+	url = https://github.com/glennrp/libpng.git
+    ignore = dirty

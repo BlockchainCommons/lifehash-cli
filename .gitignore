@@ -1,0 +1,13 @@
+autom4te.cache/*
+config.log
+sysroot/
+*.dSYM
+config.status
+autoscan.log
+configure.scan
+*.o
+*.a
+src/lifehash
+test.png
+output/
+xcuserdata/
