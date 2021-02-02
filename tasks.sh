@@ -86,3 +86,13 @@ build()
     make lifehash
     #dsymutil src/lifehash
 )
+
+install()
+(
+    make install
+)
+
+uninstall()
+(
+    make uninstall
+)

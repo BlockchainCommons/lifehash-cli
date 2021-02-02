@@ -19,20 +19,17 @@ all clean check:
 lifehash:
 	cd src && $(MAKE) $@
 
-#.PHONY: install uninstall
-#install uninstall:
-#	cd src && $(MAKE) $@
+.PHONY: install uninstall
+lib install uninstall:
+	cd src && $(MAKE) $@
 
-#config.status: configure
-#	./config.status --recheck
-
-#.PHONY: distclean
-#distclean:
-#	cd src && $(MAKE) $@
-#	rm -f Makefile
-#	rm -rf autom4te.cache
-#	rm -f autoscan.log
-#	rm -f configure.scan configure.status config.log
-#	rm -f config.log config.status config.h
-#	rm -rf deps/*
-#	rm -rf sysroot
+.PHONY: distclean
+distclean:
+	cd src && $(MAKE) $@
+	rm -f Makefile
+	rm -rf autom4te.cache
+	rm -f autoscan.log
+	rm -f configure.scan configure.status config.log
+	rm -f config.log config.status config.h
+	rm -rf deps/*
+	rm -rf sysroot

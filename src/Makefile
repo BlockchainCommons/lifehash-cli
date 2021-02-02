@@ -32,3 +32,18 @@ lifehash.o: png-writer.hpp
 clean:
 	rm -f $(toolname) *.o
 	rm -rf *.dSYM
+
+.PHONY: install
+install: $(toolname)
+	install -d $(bindir)
+	install $(toolname) $(bindir)
+
+.PHONY: uninstall
+uninstall:
+	rm -f $(bindir)/$(toolname)
+	-rmdir $(bindir) >/dev/null 2>&1
+
+.PHONY: distclean
+distclean: clean
+	rm -f Makefile
+	rm -f config.h
