@@ -11,3 +11,4 @@ src/lifehash
 test.png
 output/
 xcuserdata/
+src/lifehash-cli_*
