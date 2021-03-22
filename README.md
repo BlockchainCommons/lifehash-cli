@@ -27,6 +27,12 @@ cd bc-lifehash-cli/
 sudo make install
 ```
 
+*Note:* if on Linux you'll have to install `zsh` beforehand:
+
+```sh
+$ sudo apt-get install zsh
+```
+
 ## Usage Instructions
 
 Print the help:
