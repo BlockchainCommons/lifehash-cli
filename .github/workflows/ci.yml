@@ -9,3 +9,13 @@ jobs:
     - run: ./build.sh
     - run: sudo make install
     - run: make distclean
+
+  build-Linux:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v2
+    - run: sudo apt-get -y install zsh
+    - run: ./build.sh
+    - run: sudo make install
+    - run: make distclean
+
