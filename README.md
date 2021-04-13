@@ -1,5 +1,7 @@
 # bc-lifehash-cli
 
+![Build](https://github.com/BlockchainCommons/bc-lifehash-cli/workflows/ci/badge.svg)
+
 🟩🟩🟩🟩🟩<br/>
 🟩🟩🟨🟩🟩<br/>
 🟩🟩🟩🟨🟩<br/>
