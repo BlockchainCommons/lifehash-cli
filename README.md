@@ -1,5 +1,7 @@
 # bc-lifehash-cli
 
+![Build](https://github.com/BlockchainCommons/bc-lifehash-cli/workflows/ci/badge.svg)
+
 🟩🟩🟩🟩🟩<br/>
 🟩🟩🟨🟩🟩<br/>
 🟩🟩🟩🟨🟩<br/>
@@ -25,6 +27,12 @@ git clone https://github.com/BlockchainCommons/bc-lifehash-cli
 cd bc-lifehash-cli/
 ./build.sh
 sudo make install
+```
+
+*Note:* if on Linux you'll have to install `zsh` beforehand:
+
+```sh
+$ sudo apt-get install zsh
 ```
 
 ## Usage Instructions

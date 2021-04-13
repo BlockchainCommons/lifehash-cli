@@ -16,7 +16,7 @@ DEBUG_OPT=
 OPTIMIZE_OPT=-O3
 
 export CFLAGS="${TARGET_OPT} ${DEBUG_OPT} ${OPTIMIZE_OPT} -fdiagnostics-absolute-paths"
-export CXXFLAGS="${TARGET_OPT} ${DEBUG_OPT} ${OPTIMIZE_OPT} -std=c++17 -stdlib=libc++"
+export CXXFLAGS="${TARGET_OPT} ${DEBUG_OPT} ${OPTIMIZE_OPT} -std=c++17"
 export CPPFLAGS="-I${BUILD_ROOT}/include"
 export LDFLAGS="${TARGET_OPT} -L${BUILD_ROOT}/lib"
 
