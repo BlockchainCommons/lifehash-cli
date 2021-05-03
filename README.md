@@ -1,6 +1,6 @@
-# bc-lifehash-cli
+# lifehash-cli
 
-![Build](https://github.com/BlockchainCommons/bc-lifehash-cli/workflows/ci/badge.svg)
+![Build](https://github.com/BlockchainCommons/lifehash-cli/workflows/ci/badge.svg)
 
 🟩🟩🟩🟩🟩<br/>
 🟩🟩🟨🟩🟩<br/>
@@ -23,8 +23,8 @@
 ## Installation Instructions
 
 ```sh
-git clone https://github.com/BlockchainCommons/bc-lifehash-cli
-cd bc-lifehash-cli/
+git clone https://github.com/BlockchainCommons/lifehash-cli
+cd lifehash-cli/
 ./build.sh
 sudo make install
 ```

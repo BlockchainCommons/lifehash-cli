@@ -8,7 +8,7 @@ E-Mail: `$email`
 
 Legal Jurisdiction: Wyoming, United States of America
 
-Project: https://github.com/BlockchainCommons/bc-lifehash-cli
+Project: https://github.com/BlockchainCommons/lifehash-cli
 
 Date: `$date`
 
