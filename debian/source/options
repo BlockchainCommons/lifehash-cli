@@ -1,0 +1,2 @@
+extend-diff-ignore = "(\.*/)*.(o|a)"
+extend-diff-ignore = "deps/"
