@@ -35,8 +35,8 @@ clean:
 
 .PHONY: install
 install: $(toolname)
-	install -d $(bindir)
-	install $(toolname) $(bindir)
+	install -d $(DESTDIR)$(bindir)
+	install $(toolname) $(DESTDIR)$(bindir)
 
 .PHONY: uninstall
 uninstall:
