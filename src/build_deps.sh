@@ -1,8 +1,9 @@
-#!/bin/zsh
-
+#!/bin/bash
 set +e
 
-git submodule update --init
+if [[ $(git submodule status | head -n1) == -* ]]; then
+    git submodule update --init
+fi
 
 DEPS_ROOT=${PWD}/deps
 BUILD_ROOT=${DEPS_ROOT}/build
