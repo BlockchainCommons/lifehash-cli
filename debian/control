@@ -1,0 +1,19 @@
+Source: lifehash-cli
+Priority: optional
+Maintainer: Wolf McNally <Wolf@WolfMcNally.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+ autotools-dev,
+Standards-Version: 4.6.1
+Homepage: https://github.com/BlockchainCommons/lifehash-cli
+
+Package: lifehash-cli
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: `lifehash` is a command line tool written in C++ that generates LifeHash images as PNG files.
+ .
+ LifeHash is a method of hash visualization based on Conway’s Game of Life that creates beautiful icons that are deterministic, yet distinct and unique given the input data.
+

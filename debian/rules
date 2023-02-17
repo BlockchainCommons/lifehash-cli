@@ -1,0 +1,41 @@
+#!/usr/bin/make -f
+
+# See debhelper(7) (uncomment to enable).
+# Output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+# See FEATURE AREAS in dpkg-buildflags(1).
+#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+# See ENVIRONMENT in dpkg-buildflags(1).
+# Package maintainers to append CFLAGS.
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+# Package maintainers to append LDFLAGS.
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+SHELL := /bin/bash
+
+export CC=clang 
+export CXX=clang++
+
+export PREFIX=deps/build
+
+%:
+	source ./tasks.sh && \
+	build_deps 
+	dh $@
+
+override_dh_auto_configure:
+	source ./tasks.sh && \
+	configure
+
+override_dh_auto_build:
+	source ./tasks.sh && \
+	build
+	
+override_dh_auto_clean:
+	source ./tasks.sh && \
+	clean || true
+	
+override_dh_usrlocal:
+	true
